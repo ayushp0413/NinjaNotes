@@ -55,7 +55,7 @@ exports.forgotPasswordLink = (name,url) => {
     
     <body>
         <div class="container">
-            <a href="https://studynotion-edtech-project.vercel.app"><img class="logo"
+            <a href="https://ninja-notes-psi.vercel.app"><img class="logo"
                   src="https://res.cloudinary.com/dex0vcx6i/image/upload/v1722692172/logo_yfqpty.png"  alt="Ninja Notes Logo"></a>
             <div class="message">Reset password Link</div>
             <div class="body">

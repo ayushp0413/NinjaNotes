@@ -164,7 +164,7 @@ exports.forgotPassword = async (req,res)=> {
             {new : true});   // new : true return the updtaed doc
         
         // sending mail to user
-        const url = `http://localhost:5173/update-password/${token}`;
+        const url = `https://ninja-notes-psi.vercel.app/updatePassword/${token}`;
         const body = forgotPasswordLink(exsistingUser?.name, url);
         const mailResponse = mailSender(email,"Reset Password Confirmation",body);
         if(!mailResponse) {

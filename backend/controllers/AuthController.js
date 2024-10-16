@@ -122,6 +122,7 @@ exports.login = async (req,res)=> {
             exsistingUser,
             token,
         });
+        console.log("All good");
 
     }catch(err)
     {

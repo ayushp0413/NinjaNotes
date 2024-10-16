@@ -36,7 +36,7 @@ const Home = () => {
   }
 
   useEffect(() => {
-    getTestimonials();
+     getTestimonials();
   },[])
 
   if(loading) return <div className='loader w-full h-full mt-40 absolute top-[26%] left-[50%]'></div>;
@@ -127,7 +127,7 @@ const Home = () => {
            Hear from learners who have transformed their study habits and achieved outstanding results with our resources.
         </p>
         {
-          loading ? (<div>loading.....</div>) : 
+          loading ? (<div className='text-xl text-tempDark'>Loading.....</div>) : 
           (<Testimonial firstRow={firstRow} secondRow={secondRow} loading={loading} />)
         }     
       </div>
